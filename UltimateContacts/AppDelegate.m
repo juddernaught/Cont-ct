@@ -15,6 +15,11 @@
     // Override point for customization after application launch.
     return YES;
 }
+
+- (id)save:(Contact *)contact {
+    _myContact = contact;
+    NSLog(contact.description);
+}
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
