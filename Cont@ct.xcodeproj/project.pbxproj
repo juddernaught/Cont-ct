@@ -19,6 +19,7 @@
 		66FF51CA16F3C1D300F6F7EB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FF51C816F3C1D300F6F7EB /* MainStoryboard.storyboard */; };
 		66FF51CD16F3C1D300F6F7EB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FF51CC16F3C1D300F6F7EB /* MasterViewController.m */; };
 		66FF51D016F3C1D300F6F7EB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FF51CF16F3C1D300F6F7EB /* DetailViewController.m */; };
+		66FF51D716F3C34900F6F7EB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FF51D616F3C34900F6F7EB /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		66FF51CC16F3C1D300F6F7EB /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		66FF51CE16F3C1D300F6F7EB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		66FF51CF16F3C1D300F6F7EB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		66FF51D616F3C34900F6F7EB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 				66FF51B116F3C1D300F6F7EB /* UIKit.framework in Frameworks */,
 				66FF51B316F3C1D300F6F7EB /* Foundation.framework in Frameworks */,
 				66FF51B516F3C1D300F6F7EB /* CoreGraphics.framework in Frameworks */,
+				66FF51D716F3C34900F6F7EB /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 		66FF51AF16F3C1D300F6F7EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66FF51D616F3C34900F6F7EB /* Parse.framework */,
 				66FF51B016F3C1D300F6F7EB /* UIKit.framework */,
 				66FF51B216F3C1D300F6F7EB /* Foundation.framework */,
 				66FF51B416F3C1D300F6F7EB /* CoreGraphics.framework */,
@@ -260,6 +264,10 @@
 		66FF51D416F3C1D300F6F7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cont@ct/Cont@ct-Prefix.pch";
 				INFOPLIST_FILE = "Cont@ct/Cont@ct-Info.plist";
@@ -271,6 +279,10 @@
 		66FF51D516F3C1D300F6F7EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cont@ct/Cont@ct-Prefix.pch";
 				INFOPLIST_FILE = "Cont@ct/Cont@ct-Info.plist";
